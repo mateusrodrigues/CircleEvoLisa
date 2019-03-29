@@ -171,7 +171,8 @@ namespace GenArt
             toolStripStatusLabelPolygons.Text = circles.ToString();
             toolStripStatusLabelAvgPoints.Text = avg.ToString();
 
-            bool shouldRepaint = false;
+            // TODO: bool shouldRepaint = false;
+            bool shouldRepaint = true;
             if (repaintIntervall.Ticks > 0)
                 if (lastRepaint < DateTime.Now - repaintIntervall)
                     shouldRepaint = true;

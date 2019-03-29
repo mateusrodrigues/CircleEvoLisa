@@ -16,7 +16,7 @@ namespace GenArt.AST
         {
             var newCircle = new DnaCircle
             {
-                Center = new DnaPoint(),
+                Center = Center.Clone(),
                 Brush = Brush.Clone(),
                 Radius = this.Radius
             };
